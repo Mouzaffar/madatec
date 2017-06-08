@@ -46,21 +46,22 @@
         {/foreach}
       </ul>
     {/block}
-    <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down">
-      <a
-        href="#"
-        class="quick-view"
-        data-link-action="quickview"
-      >
-        <i class="material-icons search">&#xE8B6;</i> {l s='Quick view' d='Shop.Theme.Actions'}
-      </a>
+    {if $customer.is_logged && !$customer.is_guest}
+      <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down">
+        <a
+          href="#"
+          class="quick-view"
+          data-link-action="quickview"
+        >
+          <i class="material-icons search">&#xE8B6;</i> {l s='Quick view' d='Shop.Theme.Actions'}
+        </a>
 
-      {block name='product_variants'}
-        {if $product.main_variants}
-          {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
-        {/if}
-      {/block}
-    </div>
-
+        {block name='product_variants'}
+          {if $product.main_variants}
+            {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
+          {/if}
+        {/block}
+      </div>
+    {/if}
   </div>
 </article>
