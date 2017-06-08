@@ -1,0 +1,36 @@
+Contenu pour le site Madatec : 
+
+1) Slider
+- image, texte
+Quels images on va mettre ? sinon on enleve le slider
+
+2) Texte pour l'accueil
+
+3) A propos :
+	- qui sommes nous?
+		description de la societe (produit, specialité, phrase pour dire aussi quels sont les marques qu'on represente
+		carte de visite du magasin (nom, adresse, numéro de telephone, adresse email, etc..)
+	- Nos valeurs : 
+		ajout de clause de garantie
+		les facilités de paiement
+		flexibilité de commerce
+		accompagnement dans le process (livraison, approvisionnement, stock)
+	- offre de livraison
+		detail sur les differents mode de livraison
+		delai, facilités
+4) Menu : 
+
+Telechargement
+A propos
+les produits
+champs rechercher
+nouveau produits
+telechargement (lien vers document catalogue, carte de visite..)
+
+5) Fiche produit
+Photos
+Description
+Caracteristique (taille ecran, couleur, memoire, etc)
+
+	
+		
