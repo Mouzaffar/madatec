@@ -40,6 +40,14 @@ class NewProductsControllerCore extends ProductListingFrontController
      */
     public function init()
     {
+
+   	if (!$this->context->customer->isLogged()) {
+            header('HTTP/1.1 403 Forbidden');
+            header('Status: 403 Forbidden');
+            Tools::redirect('authentication?from=category');
+
+        }
+
         parent::init();
 
         $this->doProductSearch('catalog/listing/new-products');
