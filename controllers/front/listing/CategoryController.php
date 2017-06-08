@@ -69,7 +69,7 @@ class CategoryControllerCore extends ProductListingFrontController
             Tools::redirect('index.php?controller=404');
         }
 
-        if (!$this->category->checkAccess($this->context->customer->id)) {
+        if (!$this->category->checkAccess($this->context->customer->id) || !$this->context->customer->isLogged()) {
             header('HTTP/1.1 403 Forbidden');
             header('Status: 403 Forbidden');
             $this->errors[] = $this->trans('You do not have access to this category.', array(), 'Shop.Notifications.Error');
