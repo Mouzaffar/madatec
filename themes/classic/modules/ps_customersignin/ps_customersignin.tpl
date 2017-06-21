@@ -10,9 +10,15 @@
         {l s='Sign out' d='Shop.Theme.Actions'}
       </a>
      
+     <a
+        class="logout hidden-md-up"
+        href="{$logout_url}"
+        rel="nofollow"
+      >
         <i class="material-icons hidden-md-up logged">&#xE7FF;</i>
-        <span class="hidden-sm-down">{$customerName}</span>
       </a>
+        <span class="hidden-sm-down">{$customerName}</span>
+      
     {else}
       <a
         href="{$my_account_url}"
